@@ -185,7 +185,7 @@ class AuthService {
 
       throw FormatException('Access Token Missing');
     } catch (e) {
-      print('Invalid Refresh Response: $e');
+      print('Invalid Refresh Response: $e'); // Just printing
 
       await tokenService.deleteAllTokens();
 
